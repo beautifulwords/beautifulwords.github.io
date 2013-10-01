@@ -6,9 +6,10 @@ body {
 }
 h1 {
   display: inline-block;
+  margin-top: 0px;
   margin-right: 2px;
   margin-bottom: 12px;
-  padding: 9px 29px 9px 13px;
+  padding: 5px 8px 12px 0px;
   float: none;
   background-color: rgba(0, 0, 0, 0.49);
   box-shadow: none;
@@ -21,8 +22,8 @@ h1 {
 }
 h2 {
   display: inline-block;
-  margin: 1px 0px 0px;
-  padding: 9px 13px 12px;
+  margin: 2px 0px 0px;
+  padding: 7px 13px 8px;
   background-color: rgba(0, 0, 0, 0.49);
   color: white;
   font-size: 30px;
@@ -40,6 +41,7 @@ h4 {
   margin-right: 0px;
   margin-bottom: 6px;
   margin-left: 0px;
+  padding-bottom: 5px;
   border-width: 1px;
   border-color: black;
   box-shadow: none;
@@ -66,7 +68,11 @@ h6 {
 }
 p {
   margin-bottom: 15px;
+  border-width: 1px;
+  border-color: black;
   font-size: 14px;
+  font-weight: 400;
+  text-align: left;
 }
 img {
   display: inline-block;
@@ -74,6 +80,7 @@ img {
   max-width: 100%;
   margin-right: 1px;
   padding-right: 2px;
+  float: right;
   vertical-align: middle;
 }
 .button {
@@ -93,8 +100,9 @@ img {
   background-color: #008cff;
 }
 .section {
+  margin-top: 0px;
   padding-top: 43px;
-  padding-bottom: 43px;
+  padding-bottom: 95px;
   background-image: none;
 }
 .section.header {
@@ -141,6 +149,11 @@ img {
 .nav-link:hover.sign-up:hover {
   background-color: #0076d6;
 }
+.nav-link.events {
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
 .company-title {
   color: white;
   font-size: 20px;
@@ -157,7 +170,7 @@ img {
   height: 200px;
   min-height: 200px;
   margin-bottom: -3px;
-  padding-top: 186px;
+  padding-top: 281px;
   padding-bottom: 62px;
   float: none;
   background-color: black;
@@ -228,6 +241,7 @@ img {
 }
 .right-col {
   padding-top: 13px;
+  border: 0px none black;
   text-align: right;
 }
 .more-link {
@@ -261,6 +275,7 @@ img {
   font-weight: 700;
 }
 .snippet-text {
+  margin-bottom: 13px;
   color: #737373;
   font-size: 14px;
   line-height: 19px;
@@ -294,14 +309,15 @@ img {
   font-size: 14px;
 }
 .content-bg {
-  height: 100px;
+  height: 85px;
   min-height: 20px;
   margin-top: 0px;
-  padding-top: 22px;
+  padding-top: 19px;
+  padding-bottom: 0px;
   background-color: lightgrey;
-  background-image: -webkit-repeating-linear-gradient(11deg, white, rgba(121, 240, 70, 0.81));
-  background-image: -o-repeating-linear-gradient(281deg, white, rgba(121, 240, 70, 0.81));
-  background-image: repeating-linear-gradient(281deg, white, rgba(121, 240, 70, 0.81));
+  background-image: -webkit-repeating-linear-gradient(11deg, white, rgba(51, 102, 242, 0.61));
+  background-image: -o-repeating-linear-gradient(281deg, white, rgba(51, 102, 242, 0.61));
+  background-image: repeating-linear-gradient(281deg, white, rgba(51, 102, 242, 0.61));
 }
 .content-bg.two {
   float: none;
@@ -309,12 +325,39 @@ img {
   background-image: -o-linear-gradient(48deg, rgba(67, 132, 230, 0.81), white);
   background-image: linear-gradient(48deg, rgba(67, 132, 230, 0.81), white);
 }
+.content-bg.three {
+  background-image: -webkit-repeating-linear-gradient(11deg, white, rgba(32, 185, 212, 0.81));
+  background-image: -o-repeating-linear-gradient(281deg, white, rgba(32, 185, 212, 0.81));
+  background-image: repeating-linear-gradient(281deg, white, rgba(32, 185, 212, 0.81));
+}
+.content-bg.h2 {
+  background-image: -webkit-repeating-linear-gradient(11deg, white, rgba(51, 102, 242, 0.61));
+  background-image: -o-repeating-linear-gradient(281deg, white, rgba(51, 102, 242, 0.61));
+  background-image: repeating-linear-gradient(281deg, white, rgba(51, 102, 242, 0.61));
+}
 .note {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.quote {
+  font-size: 16px;
+  font-weight: 700;
+}
+.side-bar {
+  float: none;
+  color: #ae08cf;
 }
 @media (max-width: 991px) {
+  h1 {
+    font-size: 31px;
+  }
+  h2 {
+    margin-left: -13px;
+    padding-left: 0px;
+  }
   p {
     font-size: 13px;
+    text-align: left;
   }
   img {
     padding-right: 0px;
@@ -326,8 +369,12 @@ img {
     -o-transition: all 200ms ease;
     transition: all 200ms ease;
   }
+  .section {
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
   .hero-bg {
-    background-image: url(../images/dreams_wishes_and_fairies.jpg), url(../images/example-bg.png);
+    background-image: url(../images/dreams_wishes_and_fairies.jpg);
   }
   .hero-bg.content {
     background-image: url(../images/example-bg.png);
@@ -351,17 +398,42 @@ img {
     transition: all 200ms ease;
   }
   .content-bg {
-    background-image: -webkit-linear-gradient(59deg, white, rgba(151, 245, 88, 0.90) 85%), url(../images/example-bg.png);
-    background-image: -o-linear-gradient(329deg, white, rgba(151, 245, 88, 0.90) 85%), url(../images/example-bg.png);
-    background-image: linear-gradient(329deg, white, rgba(151, 245, 88, 0.90) 85%), url(../images/example-bg.png);
+    margin-top: 55px;
+    background-image: -webkit-linear-gradient(59deg, white, rgba(51, 102, 242, 0.61) 85%);
+    background-image: -o-linear-gradient(329deg, white, rgba(51, 102, 242, 0.61) 85%);
+    background-image: linear-gradient(329deg, white, rgba(51, 102, 242, 0.61) 85%);
   }
   .content-bg.two {
     background-image: -webkit-linear-gradient(74deg, white, rgba(67, 132, 230, 0.81) 94%), url(../images/example-bg.png);
     background-image: -o-linear-gradient(344deg, white, rgba(67, 132, 230, 0.81) 94%), url(../images/example-bg.png);
     background-image: linear-gradient(344deg, white, rgba(67, 132, 230, 0.81) 94%), url(../images/example-bg.png);
   }
+  .side-bar {
+    direction: ltr;
+    font-family: Bitter, serif;
+    text-decoration: none;
+  }
 }
 @media (max-width: 767px) {
+  h1 {
+    margin-top: 82px;
+    padding-top: 0px;
+    text-align: right;
+  }
+  h2 {
+    margin-left: 11px;
+  }
+  p {
+    margin-bottom: 36px;
+  }
+  img {
+    position: static;
+    overflow: visible;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-top: 6px;
+    padding-bottom: 0px;
+  }
   .button {
     margin-bottom: 33px;
     padding: 29px 30px;
@@ -396,9 +468,10 @@ img {
     padding-top: 238px;
     padding-right: 11px;
     padding-left: 11px;
-    background-image: -webkit-linear-gradient(#1a29f0, white), url(../images/example-bg.png);
-    background-image: -o-linear-gradient(#1a29f0, white), url(../images/example-bg.png);
-    background-image: linear-gradient(#1a29f0, white), url(../images/example-bg.png);
+    background-image: url(../images/fairies-twmp-header1.jpg), -webkit-linear-gradient(#1a29f0, white);
+    background-image: url(../images/fairies-twmp-header1.jpg), -o-linear-gradient(#1a29f0, white);
+    background-image: url(../images/fairies-twmp-header1.jpg), linear-gradient(#1a29f0, white);
+    background-size: cover, auto;
   }
   .hero-bg.content {
     min-height: 290px;
@@ -419,12 +492,12 @@ img {
     margin-top: -42px;
   }
   .snippet-title {
-    padding-top: 64px;
+    padding-top: 3px;
   }
   .snippet-text {
     margin-top: -5px;
     margin-bottom: 4px;
-    padding-top: 0px;
+    padding-top: 14px;
     padding-bottom: 7px;
   }
   .button-column {
@@ -445,9 +518,9 @@ img {
     margin-bottom: -15px;
     padding-top: 21px;
     padding-bottom: 5px;
-    background-image: -webkit-linear-gradient(333deg, white, rgba(151, 245, 88, 0.90)), url(../images/example-bg.png);
-    background-image: -o-linear-gradient(243deg, white, rgba(151, 245, 88, 0.90)), url(../images/example-bg.png);
-    background-image: linear-gradient(243deg, white, rgba(151, 245, 88, 0.90)), url(../images/example-bg.png);
+    background-image: -webkit-linear-gradient(333deg, white, rgba(51, 102, 242, 0.61));
+    background-image: -o-linear-gradient(243deg, white, rgba(51, 102, 242, 0.61));
+    background-image: linear-gradient(243deg, white, rgba(51, 102, 242, 0.61));
   }
   .content-bg.two {
     background-image: -webkit-linear-gradient(rgba(67, 132, 230, 0.81), white), url(../images/example-bg.png);
@@ -456,19 +529,33 @@ img {
   }
 }
 @media (max-width: 479px) {
+  h1 {
+    margin-bottom: 0px;
+    padding: 0px 4px 0px 9px;
+  }
   h2 {
     margin-top: 4px;
     padding-top: 2px;
     padding-bottom: 4px;
   }
   h4 {
-    margin-top: 33px;
-    padding-top: 26px;
+    margin-top: 7px;
+    margin-bottom: 48px;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  img {
+    clear: none;
   }
   .button {
     -webkit-transition: all 200ms ease;
     -o-transition: all 200ms ease;
     transition: all 200ms ease;
+  }
+  .section {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 23px;
   }
   .section.header {
     padding-right: 16px;
@@ -483,15 +570,19 @@ img {
     transition: all 200ms ease;
   }
   .hero-bg {
-    background-image: url(../images/example-bg.png);
+    margin-bottom: 0px;
+    padding-top: 0px;
+    background-image: url(../images/fairies-twmp-header1.jpg);
   }
   .hero-bg.content {
     background-image: url(../images/example-bg.png);
   }
   .section-description {
     width: 50%;
+    padding-right: 0px;
   }
   .snippet-img {
+    background-color: rgba(0, 0, 0, 0);
     background-image: url(../images/example-bg.png);
   }
   .snippet {
@@ -500,20 +591,29 @@ img {
     transition: all 200ms ease;
   }
   .snippet-title {
-    padding-top: 101px;
+    padding-top: 13px;
   }
   .snippet-text {
-    margin-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   .content-bg {
     max-height: 50px;
     min-height: 50px;
-    padding-top: 87px;
+    margin-bottom: -74px;
+    padding-top: 0px;
+    background-image: -webkit-linear-gradient(339deg, rgba(51, 102, 242, 0.61), white);
+    background-image: -o-linear-gradient(249deg, rgba(51, 102, 242, 0.61), white);
+    background-image: linear-gradient(249deg, rgba(51, 102, 242, 0.61), white);
+  }
+  .content-bg.two {
+    margin-top: 44px;
     background-image: -webkit-linear-gradient(339deg, rgba(151, 245, 88, 0.90), white), url(../images/example-bg.png);
     background-image: -o-linear-gradient(249deg, rgba(151, 245, 88, 0.90), white), url(../images/example-bg.png);
     background-image: linear-gradient(249deg, rgba(151, 245, 88, 0.90), white), url(../images/example-bg.png);
   }
-  .content-bg.two {
-    margin-top: 44px;
+  .side-bar {
+    margin-bottom: 5px;
   }
 }
