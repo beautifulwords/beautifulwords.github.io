@@ -67,7 +67,8 @@ h6 {
   font-weight: 700;
 }
 p {
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 41px;
   border-width: 1px;
   border-color: black;
   font-size: 14px;
@@ -166,11 +167,12 @@ img {
   text-align: right;
 }
 .hero-bg {
+  position: relative;
   width: auto;
-  height: 200px;
+  height: 250px;
   min-height: 200px;
   margin-bottom: -3px;
-  padding-top: 281px;
+  padding-top: 312px;
   padding-bottom: 62px;
   float: none;
   background-color: black;
@@ -345,7 +347,11 @@ img {
 }
 .side-bar {
   float: none;
+  font-family: Exo, sans-serif;
   color: #ae08cf;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
 }
 @media (max-width: 991px) {
   h1 {
@@ -373,7 +379,16 @@ img {
     margin-bottom: 20px;
     padding-bottom: 0px;
   }
+  .nav-link {
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+  }
   .hero-bg {
+    position: relative;
+    top: -20px;
+    display: block;
+    height: 209px;
     background-image: url(../images/dreams_wishes_and_fairies.jpg);
   }
   .hero-bg.content {
@@ -415,16 +430,23 @@ img {
   }
 }
 @media (max-width: 767px) {
-  h1 {
-    margin-top: 82px;
+  body {
     padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  h1 {
+    margin-top: 93px;
+    padding-top: 0px;
+    font-size: 28px;
     text-align: right;
   }
   h2 {
     margin-left: 11px;
   }
   p {
-    margin-bottom: 36px;
+    margin-top: 1px;
+    margin-bottom: 29px;
   }
   img {
     position: static;
@@ -461,13 +483,18 @@ img {
     margin-bottom: 33px;
   }
   .nav-bar {
+    padding-top: 0px;
+    padding-bottom: 0px;
     text-align: center;
   }
   .hero-bg {
+    overflow: visible;
     min-height: 390px;
+    margin-top: 1px;
     padding-top: 238px;
     padding-right: 11px;
     padding-left: 11px;
+    clear: none;
     background-image: url(../images/fairies-twmp-header1.jpg), -webkit-linear-gradient(#1a29f0, white);
     background-image: url(../images/fairies-twmp-header1.jpg), -o-linear-gradient(#1a29f0, white);
     background-image: url(../images/fairies-twmp-header1.jpg), linear-gradient(#1a29f0, white);
@@ -477,6 +504,9 @@ img {
     min-height: 290px;
     padding-top: 205px;
     background-image: url(../images/example-bg.png);
+  }
+  .section-description {
+    padding-left: 4px;
   }
   .snippet-img {
     height: 206px;
@@ -504,6 +534,8 @@ img {
     padding-top: 61px;
   }
   .company-column {
+    padding-top: 0px;
+    padding-bottom: 0px;
     text-align: center;
   }
   .footer-nav-bar {
@@ -590,13 +622,24 @@ img {
     -o-transition: all 200ms ease;
     transition: all 200ms ease;
   }
+  .right-col {
+    margin-top: -8px;
+  }
+  .more-link {
+    margin-top: 4px;
+    padding-top: 0px;
+  }
   .snippet-title {
     padding-top: 13px;
   }
   .snippet-text {
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .button-column {
+    padding-top: 0px;
   }
   .content-bg {
     max-height: 50px;
@@ -614,6 +657,8 @@ img {
     background-image: linear-gradient(249deg, rgba(151, 245, 88, 0.90), white), url(../images/example-bg.png);
   }
   .side-bar {
+    position: relative;
+    top: -19px;
     margin-bottom: 5px;
   }
 }
